@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hide scrollbar globally but keep scrolling functional */
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+*::-webkit-scrollbar {
+  width: 0px; /* Chrome, Safari, Opera */
+  height: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.App {
+  min-height: 100vh;
+  width: 100%;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#fd4360] text-white py-2 px-4 rounded hover:bg-[#e03050] transition-colors;
+  }
+
+  .section-title {
+    @apply text-[#fd4360] font-bold text-xl mb-4;
+  }
+
+  .section-heading {
+    @apply text-white font-bold text-4xl md:text-5xl mb-6;
+  }
+
+  .service-card {
+    @apply border border-[#e3e3e3] bg-[#bdbaba23] p-8 transition-transform hover:scale-105;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .bg-gradient-primary {
+    background: linear-gradient(
+      135deg,
+      var(--primary-background) 0%,
+      var(--primary-light) 100%
+    );
+  }
+}
