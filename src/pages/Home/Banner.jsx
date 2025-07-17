@@ -11,7 +11,7 @@ const Banner = () => {
       />
 
       {/* Main Content */}
-      <div className="relative z-10 w-full px-4 sm:px-6 lg:px-12 xl:px-24 text-black flex flex-col lg:flex-row items-center justify-between gap-12 py-20 text-center lg:text-left">
+      <div className="relative mt-10 z-10 w-full px-4 sm:px-6 lg:px-12 xl:px-24 text-black flex flex-col lg:flex-row items-center justify-between gap-12 py-20 text-center lg:text-left">
         {/* Text Section */}
         <div className="flex-1 w-full lg:w-1/2 max-w-5xl space-y-6">
           <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl 2xl:text-8xl font-extrabold leading-tight ">
