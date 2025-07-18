@@ -34,7 +34,7 @@ const OurMission = () => {
   return (
     <section
       id="missionSection"
-      className="flex flex-col lg:flex-row items-center justify-center gap-10 px-4 sm:px-10 lg:px-20 py-10"
+      className="flex flex-col lg:flex-row items-center justify-center gap-10 px-4 sm:px-10 lg:px-20 py-2"
     >
       {/* Left Content */}
       <div

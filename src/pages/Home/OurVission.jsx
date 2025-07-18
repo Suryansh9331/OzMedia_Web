@@ -33,7 +33,7 @@ const OurVision = () => {
   return (
     <section
       id="visionSection"
-      className="flex flex-col-reverse lg:flex-row items-center justify-center gap-10 px-4 sm:px-10 lg:px-20 py-10"
+      className="flex flex-col-reverse lg:flex-row items-center justify-center gap-10 px-4 sm:px-10 lg:px-20 py-2"
     >
       {/* Right Image Section */}
       <div

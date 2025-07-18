@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import gsap from "gsap";
 import grid from "../../assets/grid.png";
-
+import { motion } from "framer-motion";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import MotionPathPlugin from "gsap/MotionPathPlugin";
 import TagSection from "./TagSection";
@@ -13,6 +13,7 @@ import Banner from "./Banner";
 
 import PartnersMarquee from "../../components/Marque";
 import CustomVideoSection from "./VideoSection";
+import OverviewSection from "./Overview";
 
 gsap.registerPlugin(MotionPathPlugin);
 gsap.registerPlugin(ScrollTrigger);
@@ -117,36 +118,17 @@ const HomePage = () => {
       <div className="mx-4">
         <Banner />
       </div>
-      <section
-        id="planeSec"
-        className="bg-red-300 min-h-[50vh] relative flex items-center justify-center overflow-visible"
-      >
-        {/* Content in Normal Flow */}
-        <div className="relative z-10 w-full max-w-8xl px-4 sm:px-6 md:px-12 lg:px-20 py-10 flex flex-col gap-6 md:gap-10 text-black  text-center">
-          <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl leading-tight font-montserrat font-bold ">
-            Overview
-          </h1>
+    
+     <OverviewSection/>
 
-          <p className=" text-base sm:text-lg md:text-2xl lg:text-2xl font-normal font-display leading-relaxed ">
-            Oz Media Planet is a powerhouse where cutting-edge technology meets
-            high-impact digital marketing. We are not just a service provider—we
-            are creators, disruptors, and growth accelerators.
-          </p>
-
-          <p className=" text-base sm:text-lg md:text-2xl lg:text-2xl font-normal font-display leading-relaxed ">
-          With expertise in digital marketing and IT development, we engineer brands that dominate and build technology that scales. From crafting powerful marketing campaigns to developing next-gen software solutions, our goal is simple-to transform businesses into industry <br />  leaders.
-          </p>
-        </div>
-      </section>
-
-      <section className="min-h-screen ">
+      <section className="min-h-auto ">
         <OurMission />
       </section>
-      <section className="min-h-screen ">
+      <section className="min-h-auto ">
         <OurVision />
       </section>
 
-      <section className="h-screen p-4 md:p-20 ">
+      <section className="h-auto p-4 md:p-20 ">
         <TagSection />
       </section>
       <section className="min-h-screen container mx-auto  px-4 sm:px-6 lg:px-8 py-20 ">
