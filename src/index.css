@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important; */
   
-}
+/* } */
 
 /* Hide scrollbar globally but keep scrolling functional */
 * {
@@ -20,24 +20,24 @@
   width: 0px;                   /* Chrome, Safari, Opera */
   height: 0px;
 }
-
+/* 
 body  {
   background-color: #CFCFCF ;
   color: #333;
   line-height: 1.6;
   overflow-x: hidden !important;
-}
+} */
 
-a {
+/* a {
   text-decoration: none;
   color: inherit;
-}
+} */
 
-.App {
+/* .App {
   min-height: 100vh;
   width: 100%;
   overflow: hidden;
-}
+} */
 
 @keyframes marquee {
   0% {
@@ -53,41 +53,41 @@ a {
 }
 
 
-
+/* 
 @layer base {
-  :root {
+  :root { */
     /* Primary Colors */
-    --primary-background: #fd4360;
+    /* --primary-background: #fd4360;
     --primary-foreground: #ffffff;
     --primary-light: #ff6580;
-    --primary-dark: #e03050;
+    --primary-dark: #e03050; */
 
     /* Secondary Colors */
-    --secondary-background: #070707;
+    /* --secondary-background: #070707;
     --secondary-foreground: #ffffff;
     --secondary-light: #363636;
-    --secondary-dark: #000000;
+    --secondary-dark: #000000; */
 
     /* Accent Colors */
-    --accent-color: #bdbaba23;
+    /* --accent-color: #bdbaba23;
     --accent-foreground: #ffffff;
     --accent-light: #e3e3e3;
-    --accent-dark: #999999;
+    --accent-dark: #999999; */
 
     /* Border Colors */
-    --border-primary: #bdbaba23;
+    /* --border-primary: #bdbaba23;
     --border-secondary: #e3e3e3;
     --border-light: #ffffff;
     --border-dark: #363636;
-  }
+  } */
 
-  body {
+  /* body {
     font-family: "Roboto", sans-serif;
     background-color: var(--secondary-background);
     color: var(--secondary-foreground);
-  }
+  } */
 
-  h1,
+  /* h1,
   h2,
   h3,
   h4,
@@ -95,5 +95,5 @@ a {
   h6 {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-  }
-}
+  } */
+/* } */

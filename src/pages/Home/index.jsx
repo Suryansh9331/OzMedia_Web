@@ -14,6 +14,8 @@ import Banner from "./Banner";
 import PartnersMarquee from "../../components/Marque";
 import CustomVideoSection from "./VideoSection";
 import OverviewSection from "./Overview";
+import FAQ from "./FaqSection";
+import ParallaxHero from "./TagSection";
 
 gsap.registerPlugin(MotionPathPlugin);
 gsap.registerPlugin(ScrollTrigger);
@@ -114,7 +116,7 @@ const HomePage = () => {
   ];
 
   return (
-    <main className="overflow-hidden mb-20">
+    <main className="overflow-hidden mb-20  bg-[#cfcfcf]">
       <div className="mx-4">
         <Banner />
       </div>
@@ -128,8 +130,8 @@ const HomePage = () => {
         <OurVision />
       </section>
 
-      <section className="h-auto p-4 md:p-20 ">
-        <TagSection />
+      <section className="h-auto ">
+        <ParallaxHero />
       </section>
       <section className="min-h-screen container mx-auto  px-4 sm:px-6 lg:px-8 py-20 ">
         {/* Header */}
@@ -178,14 +180,7 @@ const HomePage = () => {
       </section>
 
       <section className="min-h-screen relative z-0 overflow-hidden my-14">
-        {/* Header */}
-        <p className="text-pink-500 text-2xl font-semibold text-center">FAQ</p>
-        <h2 className="text-2xl sm:text-4xl font-display  font-bold text-center bg-gradient-to-r from-[#5A1C72] to-[#2B0659] bg-clip-text text-transparent">
-          Got Questions? We’ve Got Real Answers.
-        </h2>
-        <div className="p-4 md:p-20 relative z-10">
-          <FaqSection />
-        </div>
+        <FAQ/>
       </section>
 
       <section className="py-10">

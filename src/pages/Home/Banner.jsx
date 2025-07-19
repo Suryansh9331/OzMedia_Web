@@ -2,7 +2,7 @@ import Button from "../../components/Buttons";
 
 const Banner = () => {
   return (
-    <section className="relative w-full min-h-screen flex items-center justify-center border-2 border-[#17003E17] rounded-b-3xl bg-purple/10">
+    <section className="relative w-full min-h-screen bg-[#c4bec7] flex items-center justify-center border-2 border-[#17003E17] rounded-b-3xl bg-purple/10">
       {/* Bouncing Calendar Image - Center Top */}
       <img
         src="/Assets/Calender.png"
