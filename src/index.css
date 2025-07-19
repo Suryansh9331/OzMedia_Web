@@ -11,15 +11,15 @@
 /* } */
 
 /* Hide scrollbar globally but keep scrolling functional */
-* {
-  scrollbar-width: none;        /* Firefox */
-  -ms-overflow-style: none;     /* IE and Edge */
-}
+/* * {
+  scrollbar-width: none;        
+  -ms-overflow-style: none;     
+} */
 
-*::-webkit-scrollbar {
-  width: 0px;                   /* Chrome, Safari, Opera */
+/* *::-webkit-scrollbar {
+  width: 0px;                  
   height: 0px;
-}
+} */
 /* 
 body  {
   background-color: #CFCFCF ;
@@ -33,11 +33,11 @@ body  {
   color: inherit;
 } */
 
-/* .App {
+.App {
   min-height: 100vh;
   width: 100%;
   overflow: hidden;
-} */
+}
 
 @keyframes marquee {
   0% {

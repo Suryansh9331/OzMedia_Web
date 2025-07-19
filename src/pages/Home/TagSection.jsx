@@ -102,3 +102,64 @@
 
 // export default TagSection;
 
+
+
+
+
+
+
+
+
+import React from "react";
+import { motion } from "framer-motion";
+import img from "../../assets/images/parallax.jpg";
+
+export default function TagSection() {
+  return (
+    <div
+      className="relative h-auto py-24 bg-fixed bg-center bg-cover flex items-center justify-center"
+      style={{
+        backgroundImage: `url(${img})`,
+      }}
+    >
+      {/* Soft Overlay */}
+      <div className="absolute inset-0 bg-black/80 backdrop-blur-sm z-10" />
+
+      {/* Content */}
+      <motion.div
+        className="relative z-20 text-center px-6 max-w-8xl"
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
+        <motion.h1
+          className="text-2xl md:text-4xl font-bold text-slate-100 mb-4 leading-snug tracking-wide"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+        >
+          <span className="text-[#cfcfcf] lg:text-7xl ">Let’s automate the boring.</span>
+          <br />
+          <span className="text-[#cfcfcf] lg:text-5xl ">And amplify the bold.</span>
+        </motion.h1>
+
+        <motion.p
+          className="text-lg md:text-xl text-slate-300 mb-8 font-light"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.8 }}
+        >
+          That’s the <span className="text-[#fd4360] font-medium">Oz Media</span> way.
+        </motion.p>
+
+        <motion.button
+          whileHover={{ scale: 1.06 }}
+          whileTap={{ scale: 0.95 }}
+          className="bg-[#cfcfcf] hover:bg-sky-300 animate-bounce hover:cursor-pointer  text-black font-medium py-3 px-8 rounded-full shadow-md transition-all duration-300"
+        >
+          Let’s Connect
+        </motion.button>
+      </motion.div>
+    </div>
+  );
+}

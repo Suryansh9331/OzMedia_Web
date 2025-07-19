@@ -33,7 +33,7 @@ const OverviewSection = () => {
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-black  font-montserrat pb-4 relative inline-block">
             Overview
             <span 
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-[#fd4360] transition-all duration-1000 ease-out ${isVisible ? 'scale-x-100' : 'scale-x-0'}`}
+              className={`absolute bottom-0 left-0 w-full h-[1px] bg-[#fd4360] transition-all duration-1000 ease-out ${isVisible ? 'scale-x-100' : 'scale-x-0'}`}
               style={{ transformOrigin: 'left center' }}
             ></span>
           </h1>
@@ -65,7 +65,7 @@ const OverviewSection = () => {
 
        
         {/* Glowing animated separator */}
-        <div className={`relative w-52 h-0.5 my-8 overflow-hidden ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+        <div className={`relative w-1/2  h-0.5 my-8 overflow-hidden ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
           <div className="absolute inset-0 bg-[#fd4360] "></div>
           <div 
             className="absolute inset-0 bg-gradient-to-r from-transparent via-[#fd4360] to-transparent animate-glow-sweep"

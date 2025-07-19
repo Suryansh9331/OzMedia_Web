@@ -120,8 +120,8 @@ const HomePage = () => {
       <div className="mx-4">
         <Banner />
       </div>
-    
-     <OverviewSection/>
+
+      <OverviewSection />
 
       <section className="min-h-auto ">
         <OurMission />
@@ -130,67 +130,96 @@ const HomePage = () => {
         <OurVision />
       </section>
 
-      <section className="h-auto ">
-        <ParallaxHero />
-      </section>
-      <section className="min-h-screen container mx-auto  px-4 sm:px-6 lg:px-8 py-20 ">
+      <section className="h-auto container mx-auto px-4 sm:px-6 lg:px-8  sm:py-6 pb-8 lg:py-18   ">
         {/* Header */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10 mb-10 sm:mb-16">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-10 sm:mb-16 relative">
           <img
             src="/Assets/Group 53 (1).png"
             alt="Arrow icon"
-            className="rotate-12 w-12 sm:w-14 md:w-16 lg:w-20"
+            className="rotate-12 w-12 sm:w-14 md:w-16 lg:w-28"
           />
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold bg-gradient-to-r from-[#095383] to-[#02121D] bg-clip-text text-transparent font-display text-center sm:text-left">
-            Our Values
-          </h2>
+          <div className="flex flex-col items-center sm:items-start">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold bg-gradient-to-r from-[#095383] to-[#02121D] bg-clip-text text-transparent font-display text-center sm:text-left">
+              Our Values
+            </h2>
+
+            {/* Separator Line Under Heading Only */}
+            <div className="mt-2 w-full h-[1px] bg-gradient-to-r from-[#095383] to-[#02121D] rounded-full"></div>
+          </div>
         </div>
-        {/* Image Section */}``
-        <div className=" mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+
+        {/* Image Section */}
+        <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
           <img
             src="/Assets/Group 304 (2).png"
             alt="Cover Image"
-            className="mx-w-[700px] h-auto object-cover rounded-md "
+            className="mx-w-[700px] h-auto object-cover rounded-md"
           />
         </div>
       </section>
 
-      <section className="relative h-[70vh] bg-cover bg-center bg-no-repeat  py-20 px-4 sm:px-8 lg:px-16 flex items-center justify-center overflow-hidden">
+      <section className="relative h-auto bg-cover bg-center bg-no-repeat py-20 px-4 sm:px-8 lg:px-16 flex items-center justify-center overflow-hidden">
         <img
           src={grid} // Replace with your image path
           alt="Background"
           className="absolute top-0 left-0 w-full h-full object-cover z-0"
         />
-        <div className="">
+
+        <div className="z-10">
           <div className="flex text-center justify-center gap-10 text-black">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold bg-gradient-to-r from-[#FA3594] to-[#941F58] bg-clip-text text-transparent font-display text-center sm:text-left">
               Why Choose Us
             </h2>
           </div>
-          <p className="text-2xl max-w-7xl px-auto py-6 text-center ">
+
+          <p className="text-2xl max-w-7xl px-auto py-6 text-center">
             At Oz Media Planet, we don't just follow trends—we create them. We
             are a powerhouse of Digital Marketing and Information Technology
             Development, blending strategy, creativity, and innovation to
             transform businesses into industry leaders.
           </p>
+
           <p className="text-3xl font-bold max-w-7xl px-auto py-6 text-center">
             They Came. We Coded. They Cheered
           </p>
+
+          {/* Bouncing Arrow Animation */}
+          <div className="flex justify-center mt-6">
+            <div className="animate-bounce">
+              <svg
+                className="w-12 h-12 text-pink-500"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section className="min-h-screen relative z-0 overflow-hidden my-14">
-        <FAQ/>
+
+      <section className="h-auto ">
+        <TagSection />
+      </section>
+      <section className="h-auto">
+        <FAQ />
       </section>
 
-      <section className="py-10">
+      <section className="py-10 bg-white/20">
         <h2 className="text-2xl sm:text-4xl font-display mb-20  font-bold text-center bg-gradient-to-r from-[#5A1C72] to-[#2B0659] bg-clip-text text-transparent">
           Join the growing list of our satisfied customers
         </h2>
         <PartnersMarquee logos={logos} />
       </section>
-      <section className=" py-16">
-        <div className="max-w-[80%] mx-auto px-2 sm:px-6 lg:px-8">
+      <section className=" pb-16">
+        <div className="w-full lg:py-10 ">
           <CustomVideoSection />
           {/* Testimonials */}
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
@@ -214,7 +243,7 @@ const HomePage = () => {
                 title: "Product Designer at Martina.co",
               },
             ].map(({ quote, name, title }, idx) => (
-              <div key={idx} className="text-black">
+              <div key={idx} className="text-black px-8">
                 <p className="text-lg mb-4">"{quote}"</p>
                 <p className="font-bold">{name}</p>
                 <p className="text-sm text-gray-500">{title}</p>
