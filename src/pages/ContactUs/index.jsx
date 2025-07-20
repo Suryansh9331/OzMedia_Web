@@ -3,7 +3,7 @@ import ContactSection from "./ContactSection";
 
 const ContactUsPage = () => {
   return (
-    <div>
+    <div className="bg-[#cfcfcf]">
       <HeroSection
         title="Contact Us"
         subtitle=""
@@ -12,7 +12,14 @@ const ContactUsPage = () => {
       />
 
       <ContactSection />
-      <section class="container mx-auto h-[80vh] p-6">
+       <div className="mt-6 mb-6 flex items-center justify-center">
+      <div className="w-full max-w-2xl flex items-center justify-center gap-3 text-[#073757]">
+        <span className="flex-grow h-0.5 bg-[#073757]"></span>
+        <span className="text-[#073757] text-lg">●</span>
+        <span className="flex-grow h-0.5 bg-[#073757]"></span>
+      </div>
+    </div>
+      <section class="container mx-auto h-[80vh] p-6 bg-[#cfcfcf]">
         <iframe
           class="w-full h-full border-0 rounded-3xl"
           loading="lazy"
