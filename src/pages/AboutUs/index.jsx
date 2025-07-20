@@ -632,14 +632,8 @@ const AboutUs = () => {
           </h2>
           <PartnersMarquee logos={logos} />
         </section>
-<div className="mt-8  flex items-center justify-center">
-              <div className="w-full max-w-xl  flex items-center justify-center gap-3 text-[#073757]">
-                <span className="flex-grow h-px bg-[#073757]"></span>
-                <span className="text-[#073757] text-lg">●</span>
-                <span className="flex-grow h-px bg-[#073757]"></span>
-              </div>
-            </div>
-        {/* <ContactSection /> */}
+
+        <ContactSection />
       </main>
     </div>
   );

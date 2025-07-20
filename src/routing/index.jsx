@@ -7,6 +7,7 @@ import AboutUs from "../pages/AboutUs";
 import MarketingServicesPage from "../pages/Marketing/index.jsx";
 import ContactUsPage from "../pages/ContactUs";
 import OurTeamsPage from "../pages/OurTeams";
+import PrivacyPolicy from "../pages/PrivacyPolicy/Privacy.jsx";
 
 const AppRoutes = () => {
   return (
@@ -18,6 +19,7 @@ const AppRoutes = () => {
         <Route path="/contact" element={<ContactUsPage />} />
         <Route path="/digital-marketing" element={<MarketingServicesPage />} />
         <Route path="/our-teams" element={<OurTeamsPage />} />
+        <Route path="/privacy-policy" element={< PrivacyPolicy/>} />
       </Route>
     </Routes>
   );

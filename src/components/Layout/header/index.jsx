@@ -757,6 +757,7 @@ const Header = () => {
     { name: "Departments", href: "/departments" },
     { name: "Our Teams", href: "/our-teams" },
     { name: "Connect", href: "/contact" },
+    { name: "privacy", href: "/privacy-policy" },
   ];
 
   const socialLinks = [
