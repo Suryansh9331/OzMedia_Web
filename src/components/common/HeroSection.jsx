@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroSection = ({ title, leftImg, rightImg }) => {
   return (
-    <section className="bg-[#D7D7E2] overflow-hidden">
+    <section className="bg-[#D7D7E2] overflow-hidden lg:mt-16 mt-16  ">
       <div
         className="
           relative flex flex-col-reverse md:flex-row

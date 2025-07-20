@@ -8,7 +8,6 @@
 // import "swiper/css";
 // import "swiper/css/bundle";
 
-
 // const logos = [
 //   { src: "/Assets/asus_logo.svg.png", alt: "BestBank" },
 //   { src: "/Assets/google_logo.svg.png", alt: "dataBites" },
@@ -169,15 +168,7 @@
 
 // export default AboutUs;
 
-
-
-
-
-
-
-
-
-
+import { motion } from "framer-motion";
 
 import { useEffect, useState } from "react";
 import HeroSection from "../../components/common/HeroSection";
@@ -290,34 +281,164 @@ const AboutUs = () => {
           rightImg="/Assets/Rotate.png"
           leftImg="/Assets/About us 1.png"
         />
+        <section className="w-full bg-white lg:py-20 py-8 px-6 relative z-10 overflow-hidden">
+          <div className="max-w-full mx-auto text-center">
+            {/* Heading */}
+            <motion.h2
+              initial={{ opacity: 0, y: -20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="text-5xl font-extrabold text-[#073757] mb-4 font-montserrat"
+            >
+              Who We Are
+            </motion.h2>
 
-        {/* About Us Section */}
-        <section className="container mx-auto px-6 py-12 grid md:grid-cols-2 gap-18 items-center">
-          <div>
-            <h2 className="text-[#073757] font-montserrat font-extrabold text-5xl mb-2">
-              About Us
-            </h2>
-            <h3 className="text-4xl font-semibold mb-4">We love what we do</h3>
-            <p className="mb-4">
-              Oz Media Planet is one of the largest Internet marketing agencies
-              in India. We have been providing our clients with comprehensive
-              solutions for online promotion, increasing sales and making each
-              business really profitable.
-            </p>
-            <p>
-              We have completed over 2,500 successful projects in various fields
-              and directions. Oz Media Planet consists of more than 120
-              certified specialists: SEO experts, developers, SMM, PPC
-              specialists, etc. We change the Internet world for the better!
-            </p>
+            {/* Subheading */}
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="text-2xl text-gray-600 mb-10"
+            >
+              Eliminating digital fragmentation with unified, powerful solutions
+            </motion.p>
+
+            {/* Main Paragraph */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="text-lg text-gray-700 leading-relaxed mb-12 w-full mx-auto"
+            >
+              <p className="mb-6">
+                <strong>OZ Media Planet</strong> is a collective of creative
+                strategists, designers, developers, and performance marketers
+                working together to craft purposeful digital experiences. We
+                offer a one-stop partnership for brands needing marketing,
+                technology, and branding — all under one roof.
+              </p>
+              <p>
+                We don’t believe in one-size-fits-all. Every brand is unique,
+                and so is every strategy, campaign, and design we create.
+              </p>
+            </motion.div>
+
+            {/* Industry Grid as Boxes */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto"
+            >
+              {[
+                "E-commerce",
+                "Logistics & Transportation",
+                "Fashion & Beauty",
+                "Technology & SaaS",
+                "Healthcare",
+                "Events & Media",
+              ].map((industry, index) => (
+                <div
+                  key={index}
+                  className="bg-[#f5f9fc] text-[#073757] shadow-sm border border-[#dce5ec] p-6 rounded-xl font-semibold text-lg transition-all duration-300 hover:shadow-md"
+                >
+                  {industry}
+                </div>
+              ))}
+            </motion.div>
+
+            {/* Closing Statement */}
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="text-gray-700 text-base mt-12 max-w-6xl mx-auto leading-relaxed"
+            >
+              From launching startups to transforming enterprise brands, we help
+              our clients scale with confidence and clarity. At OZ Media Planet,
+              we deliver not just results — but meaningful digital impact.
+            </motion.p>
+
+            {/* Decorative Separator Line */}
+            <div className="mt-16 flex items-center justify-center">
+              <div className="w-full max-w-xl flex items-center justify-center gap-3 text-[#073757]">
+                <span className="flex-grow h-px bg-[#073757]"></span>
+                <span className="text-[#073757] text-lg">●</span>
+                <span className="flex-grow h-px bg-[#073757]"></span>
+              </div>
+            </div>
           </div>
-          <div className="flex justify-center">
-            <img
-              src="/Assets/Group 44242.png"
-              alt="About Illustration"
-              className="max-w-full h-auto"
-            />
+        </section>
+
+        <section className="container mx-auto px-6 ">
+          {/* Top Grid */}
+          <div className="grid md:grid-cols-2 gap-12 items-start">
+            {/* Text Content with Framer Motion */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, ease: "easeOut" }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-[#073757] font-montserrat font-extrabold text-5xl mb-4 leading-tight">
+                About Us
+              </h2>
+              <h3 className="text-3xl font-semibold text-gray-800 mb-6">
+                We Love What We Do
+              </h3>
+
+              <p className="text-gray-700 leading-relaxed mb-4">
+                <strong className="text-[#073757]">Oz Media Planet</strong> is
+                one of India’s leading Internet marketing agencies. We deliver
+                comprehensive online promotion strategies that drive real
+                business growth and success.
+              </p>
+
+              <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-6">
+                <li>
+                  <strong>2,500+ projects</strong> completed successfully across
+                  various industries.
+                </li>
+                <li>
+                  <strong>120+ certified professionals</strong>: SEO,
+                  developers, PPC, SMM, and more.
+                </li>
+                <li>
+                  End-to-end digital strategies tailored for client growth and
+                  profitability.
+                </li>
+              </ul>
+            </motion.div>
+
+            {/* Right Image with Framer Motion */}
+            <motion.div
+              className="flex justify-center"
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+              viewport={{ once: true }}
+            >
+              <img
+                src="/Assets/Group 44242.png"
+                alt="About Illustration"
+                className="max-w-full h-auto "
+              />
+            </motion.div>
           </div>
+
+          {/* Expanded Content - Full Width Below */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
+            viewport={{ once: true }}
+            className="mt-12"
+          ></motion.div>
         </section>
 
         {/* Brand Promises Section */}
@@ -352,7 +473,9 @@ const AboutUs = () => {
         {/* Testimonials Section */}
         <section
           className={`py-12 px-4 md:px-20 transition-all duration-1000 ease-out transform ${
-            showTestimonials ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+            showTestimonials
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-10"
           }`}
         >
           <h1 className="text-[#073757] font-bold font-montserrat text-5xl">
