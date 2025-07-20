@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 import Home from "../pages/Home";
 import ItServicesPage from "../pages/ItServices";
 import AboutUs from "../pages/AboutUs";
-import MarketingServicesPage from "../pages/Marketing";
+import MarketingServicesPage from "../pages/Marketing/index.jsx";
 import ContactUsPage from "../pages/ContactUs";
 import OurTeamsPage from "../pages/OurTeams";
 
