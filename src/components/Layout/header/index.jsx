@@ -753,11 +753,12 @@ const Header = () => {
     { name: "About Us", href: "/about" },
     { name: "IT Services", href: "/it-services" },
     { name: "Digital Marketing", href: "/digital-marketing" },
-    { name: "Carrier Opportunities", href: "/careers" },
+   
     { name: "Departments", href: "/departments" },
     { name: "Our Teams", href: "/our-teams" },
     { name: "Connect", href: "/contact" },
     { name: "privacy", href: "/privacy-policy" },
+     { name: "Carrier ", href: "/careers" },
   ];
 
   const socialLinks = [
@@ -894,7 +895,7 @@ const Header = () => {
         onMouseLeave={() => setIsMenuOpen(false)}
       >
         <div
-          className={`relative max-w-5xl mx-auto rounded-2xl shadow-2xl backdrop-blur-xl ${
+          className={`relative max-w-5xl mx-auto rounded-2xl   shadow-2xl backdrop-blur-xl ${
             isMenuOpen ? "animate-unroll" : "animate-roll-up"
           }`}
           style={{
@@ -902,7 +903,7 @@ const Header = () => {
               "linear-gradient(135deg, rgba(196, 190, 199, 0.95) 0%, rgba(212, 205, 215, 0.95) 50%, rgba(196, 190, 199, 0.95) 100%)",
             boxShadow:
               "0 25px 50px rgba(0,0,0,0.25), 0 0 0 1px rgba(255,255,255,0.1), inset 0 1px 0 rgba(255,255,255,0.2)",
-            border: "1px solid rgba(255,255,255,0.2)",
+            border: "2px solid [#073757] ",
             transformOrigin: "top center",
           }}
         >
@@ -928,7 +929,7 @@ const Header = () => {
                     <Link
                       key={link.name}
                       to={link.href}
-                      className="group relative overflow-hidden cursor-pointer bg-white bg-opacity-40 hover:bg-opacity-70 rounded-lg md:rounded-xl p-3 md:p-4 transition-all duration-500 transform hover:scale-105 hover:shadow-xl hover:-translate-y-1"
+                      className="group relative overflow-hidden cursor-pointer bg-white/50 border-2 border-[#073757] hover:bg-opacity-70 rounded-lg md:rounded-xl shadow-lg p-3 md:p-4 transition-all duration-500 transform hover:scale-105 hover:shadow-xl hover:-translate-y-1"
                       style={{
                         animationDelay: `${index * 0.1}s`,
                         animation: isMenuOpen
@@ -939,7 +940,7 @@ const Header = () => {
                     >
                       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                       <div className="absolute inset-0 bg-gradient-to-br from-black/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      <span className="relative z-10 text-black font-semibold group-hover:text-gray-900 transition-colors duration-300 text-sm md:text-base tracking-wide">
+                      <span className="relative z-10 text-[#073757] font-bold group-hover:text-gray-900 transition-colors duration-300 text-sm md:text-base tracking-wide">
                         {link.name}
                       </span>
                       <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-black to-gray-600 group-hover:w-full transition-all duration-500"></div>
@@ -972,7 +973,7 @@ const Header = () => {
                         }}
                       >
                         <IconComponent className="w-4 md:w-5 h-4 md:h-5 text-black group-hover:scale-125 transition-all duration-300" />
-                        <span className="text-black font-semibold text-sm md:text-base tracking-wide">
+                        <span className="text-[#0f294d] font-bold text-sm md:text-base tracking-wide">
                           {social.name}
                         </span>
                       </a>
@@ -994,7 +995,7 @@ const Header = () => {
                     <div className="flex items-center group">
                       <Phone className="w-4 md:w-5 h-4 md:h-5 mr-2 md:mr-3 text-black group-hover:scale-110 transition-transform duration-300" />
                       <span className="text-black font-medium text-sm md:text-base tracking-wide">
-                        +1 (234) 567-8900
+                       0731-4071492
                       </span>
                     </div>
                   </div>

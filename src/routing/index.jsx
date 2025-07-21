@@ -8,10 +8,13 @@ import MarketingServicesPage from "../pages/Marketing/index.jsx";
 import ContactUsPage from "../pages/ContactUs";
 import OurTeamsPage from "../pages/OurTeams";
 import PrivacyPolicy from "../pages/PrivacyPolicy/Privacy.jsx";
-
+import ScrollToTop from "../components/common/Scrolltotop.jsx";
 const AppRoutes = () => {
   return (
-    <Routes>
+   <div>
+   
+   <Routes>
+  
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="/it-services" element={<ItServicesPage />} />
@@ -22,6 +25,7 @@ const AppRoutes = () => {
         <Route path="/privacy-policy" element={< PrivacyPolicy/>} />
       </Route>
     </Routes>
+    </div>
   );
 };
 
