@@ -108,7 +108,7 @@
 
 // export default OurApproachSection;
 
-
+import { Link } from "react-router-dom";
 
 import React from "react";
 import { motion } from "framer-motion";
@@ -206,9 +206,11 @@ const OurApproachSection = () => {
           viewport={{ once: true }}
           className="text-center mt-16"
         >
+         <Link to="/contact">
           <button className="animate-bounce px-8 py-3 bg-[#073757] text-white font-semibold rounded-full shadow-lg hover:bg-[#052c47] transition duration-300">
             Start Your Journey with Us
           </button>
+        </Link>
         </motion.div>
       </div>
     </section>

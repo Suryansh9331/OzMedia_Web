@@ -723,7 +723,7 @@
 // };
 
 // export default Header;
-
+import logo from "../../../assets/images/logo.jpg"
 import React, { useState, useEffect } from "react";
 import {
   Facebook,
@@ -753,12 +753,11 @@ const Header = () => {
     { name: "About Us", href: "/about" },
     { name: "IT Services", href: "/it-services" },
     { name: "Digital Marketing", href: "/digital-marketing" },
-   
+
     { name: "Departments", href: "/organization-departments" },
     { name: "Our Teams", href: "/our-teams" },
     { name: "Connect", href: "/contact" },
     { name: "policies", href: "/privacy-policy" },
-    
   ];
 
   const socialLinks = [
@@ -857,18 +856,27 @@ const Header = () => {
           <div className="flex items-center justify-between">
             <div className="flex-shrink-0">
               <h1 className="text-2xl md:text-3xl font-bold text-black tracking-wide transform hover:scale-105 transition-transform duration-300 cursor-pointer">
-                <Link to ="/" className="flex items-center">
-                  {" "}
-                  <span className="bg-gradient-to-r from-black to-gray-700 bg-clip-text text-transparent">
-                    Oz Media
+                <Link to="/" className="flex items-center space-x-2">
+                  {/* Logo Image */}
+                  <img
+                    src={logo} // replace with actual path e.g., /assets/logo.png or import it
+                    alt="Logo"
+                    className="w-8 h-8 md:w-12 md:h-12 object-contain"
+                  />
+
+                  {/* Oz Media Text */}
+                  <span className="bg-gradient-to-r from-black to bg-slate-900 bg-clip-text text-transparent">
+                   Media Planet
                   </span>
                 </Link>
               </h1>
             </div>
             <div className="flex items-center space-x-4">
-              <button className="hidden md:block bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-medium">
-                Get in Touch
-              </button>
+              <Link to="/contact">
+                <button className="hidden md:block bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-medium">
+                  Get in Touch
+                </button>
+              </Link>
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 onMouseEnter={() => setIsMenuOpen(true)}
@@ -995,7 +1003,7 @@ const Header = () => {
                     <div className="flex items-center group">
                       <Phone className="w-4 md:w-5 h-4 md:h-5 mr-2 md:mr-3 text-black group-hover:scale-110 transition-transform duration-300" />
                       <span className="text-black font-medium text-sm md:text-base tracking-wide">
-                       0731-4071492
+                        0731-4071492
                       </span>
                     </div>
                   </div>
@@ -1004,12 +1012,14 @@ const Header = () => {
             </div>
 
             <div className="md:hidden mt-4">
+           <Link to="/contact">
               <button
                 className="w-full bg-black text-white px-6 py-2.5 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-semibold text-sm tracking-wide"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Get in Touch
               </button>
+           </Link>
             </div>
           </div>
         </div>

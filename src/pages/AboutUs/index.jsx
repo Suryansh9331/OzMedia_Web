@@ -182,6 +182,7 @@ import "swiper/css";
 import "swiper/css/bundle";
 import OurApproachSection from "./Approach";
 import TestimonialSection from "./Testimonial";
+import { Link } from "react-router-dom";
 const containerVariants = {
   hidden: {},
   show: {
@@ -385,12 +386,12 @@ const AboutUs = () => {
       viewport={{ amount: 0.3 }}
       className="mt-8"
     >
-      <a
-        href="#contact" // adjust this anchor to your actual contact section ID
+      <Link
+        to = "/contact" // adjust this anchor to your actual contact section ID
         className="inline-block px-8 py-3 text-lg font-semibold text-white bg-[#073757] rounded-full shadow-md hover:bg-[#052d47] transition-all duration-300 transform hover:scale-105"
       >
         Let’s Connect
-      </a>
+      </Link>
     </motion.div>
 
     {/* Decorative Separator Line */}
@@ -569,12 +570,14 @@ const AboutUs = () => {
             </motion.p>
 
             <motion.div variants={fadeUp}>
+            <Link to ="/contact"> 
               <Button
                 type="primary"
                 className="border-2 border-[#FCC735] bg-[#FCC735] hover:bg-[#fcd74e] text-black font-semibold py-3 px-6 rounded-lg text-sm sm:text-base transition-all duration-300"
               >
                 Read More
               </Button>
+            </Link>
             </motion.div>
           </motion.div>
         </section>

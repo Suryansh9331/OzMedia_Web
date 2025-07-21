@@ -244,7 +244,7 @@ import BlogSection from "../Marketing/BlogSection";
 import FeatureSection from "../Marketing/ContentLayout";
 import TechServices from "./TechServies";
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 const services = [
   {
     id: 1,
@@ -420,14 +420,16 @@ const ItServicesPage = () => {
       </motion.section>
 
       <div className="text-center my-4">
+       <Link to="/contact">
         <motion.a
-          href="#contact"
+          href=""
           className="inline-block bg-[#bb3e03] hover:bg-[#ae2012] text-white font-semibold py-3 px-8 rounded-full shadow-md text-lg"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
         >
           Let's Connect
         </motion.a>
+</Link>
       </div>
       <div className="mt-16 flex items-center justify-center">
         <div className="w-full max-w-xl flex items-center justify-center gap-3 text-[#073757]">
@@ -467,7 +469,7 @@ const ItServicesPage = () => {
                     </ul>
                     <div className="mt-6 text-center md:text-left">
                       <motion.a
-                        href="#contact"
+                        href="/contact"
                         className="inline-block bg-[#005f73] hover:bg-[#0a9396] text-white font-semibold py-2 px-6 rounded-full shadow-md text-base"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}

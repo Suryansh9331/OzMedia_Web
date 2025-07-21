@@ -212,7 +212,7 @@ const HomePage = () => {
         <FAQ />
       </section>
 
-      <section className="py-10 bg-white/20">
+      <section className="py-10 ">
         <h2 className="text-2xl sm:text-4xl font-display mb-20  font-bold text-center bg-gradient-to-r from-[#5A1C72] to-[#2B0659] bg-clip-text text-transparent">
           Join the growing list of our satisfied customers
         </h2>

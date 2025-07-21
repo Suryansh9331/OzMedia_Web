@@ -284,7 +284,8 @@
 // };
 
 // export default Footer;
-
+import logo from "../../../assets/images/logo.jpg";
+import logo2 from "../../../assets/images/logo (2).jpg";
 import { Link } from "react-router-dom";
 import React from "react";
 import { motion } from "framer-motion";
@@ -405,16 +406,16 @@ const Footer = () => {
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
-              <div className="w-12 h-12 bg-gradient-to-br from-red-400 to-pink-500 rounded-xl flex items-center justify-center mr-4">
+              <div className="w-20 h-20  rounded-xl flex items-center justify-center mr-2 ">
                 <img
-                  src="/api/placeholder/48/48"
+                  src={logo2}
                   alt="Company Logo"
-                  className="w-8 h-8 object-contain"
-                  style={{ filter: "brightness(0) invert(1)" }}
+                  className="w-16 h-16 object-contain"
+                 
                 />
               </div>
-              <h2 className="text-2xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-                YourBrand
+              <h2 className="text-3xl font-extrabold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+               Oz Media Planet
               </h2>
             </motion.div>
             <motion.p

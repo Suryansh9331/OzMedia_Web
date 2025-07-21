@@ -113,6 +113,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import img from "../../assets/images/parallax.jpg";
+import { Link } from "react-router-dom";
 
 export default function TagSection() {
   return (
@@ -151,7 +152,7 @@ export default function TagSection() {
         >
           That’s the <span className="text-[#fd4360] font-medium">Oz Media</span> way.
         </motion.p>
-
+<Link to="/contact">
         <motion.button
           whileHover={{ scale: 1.06 }}
           whileTap={{ scale: 0.95 }}
@@ -159,6 +160,7 @@ export default function TagSection() {
         >
           Let’s Connect
         </motion.button>
+</Link>
       </motion.div>
     </div>
   );

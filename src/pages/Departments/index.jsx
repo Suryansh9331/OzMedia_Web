@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronRight, Users, Code, Megaphone, ArrowRight, Globe, Smartphone, PenTool, BarChart3, Camera, Target, Zap, Search, Share2, Mail, TrendingUp, Monitor, Database, Settings } from 'lucide-react';
 import HeroSection from "../../components/common/HeroSection";
+import { Link } from 'react-router-dom';
 const Department = () => {
   const [activeCard, setActiveCard] = useState(null);
   const [expandedDept, setExpandedDept] = useState(null);
@@ -259,12 +260,14 @@ const Department = () => {
                 </div>
 
                 <div className="mt-8">
+               <Link to="/contact">
                   <button 
                     className="group bg-gradient-to-r from-gray-800 to-gray-700 hover:from-gray-700 hover:to-gray-600 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 flex items-center shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                   >
                     Get Started with {dept.title.split(' ')[0]} Services
                     <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
                   </button>
+               </Link>
                 </div>
               </div>
 
@@ -322,12 +325,14 @@ const Department = () => {
               </div>
 
               <div className="text-center">
+              <Link to="/about"> 
                 <button 
                   className="bg-gradient-to-r from-gray-800 to-gray-700 hover:from-gray-700 hover:to-gray-600 text-white font-semibold px-10 py-4 rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
                 >
                   Start Your Digital Journey
                   <ArrowRight className="w-5 h-5 ml-3 inline" />
                 </button>
+              </Link>
               </div>
             </div>
           </div>

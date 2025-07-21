@@ -31,6 +31,7 @@ import {
   FiYoutube,
   FiShoppingBag
 } from "react-icons/fi";
+import { Link } from "react-router-dom";
 // const logos = [
 //   { src: "Fictional Company Logo.png", alt: "BestBank" },
 //   { src: "/Fictional Company Logo-1.png", alt: "dataBites" },
@@ -250,9 +251,11 @@ const layoutType1 = (items, buttonText) => (
         </div>
       </div>
     ))}
+  <Link to="/contact">
     <button className="mt-16 bg-[#073757] hover:bg-[#0a4a7a] text-white font-bold py-4 px-6 rounded-full transition duration-300 lg:w-1/2 sm:w-full text-sm">
       {buttonText}
     </button>
+  </Link>
   </div>
 );
 
@@ -270,9 +273,11 @@ const layoutType2 = (items, buttonText) => (
         <p className="text-gray-600 text-lg">{item.description}</p>
       </div>
     ))}
+  <Link to="/contact"> 
     <button className="mt-16 bg-[#073757] hover:bg-[#0a4a7a] text-white font-bold py-4 px-6 rounded-full transition duration-300 lg:w-1/2 sm:w-full text-sm">
       {buttonText}
     </button>
+  </Link>
   </div>
 );
 

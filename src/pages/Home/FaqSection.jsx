@@ -386,14 +386,14 @@ const FAQ = ({ onTriggerPopup }) => {
         ))}
       </div>
 
-      <div className="mt-8 text-center">
+      {/* <div className="mt-8 text-center">
      
           <button   
         className="text-[#095383]   font-semibold border-2 border-[#095383] cursor-pointer px-4 py-2  inline-flex items-center gap-1">
             Know More <span className="text-xl"></span>
           </button>
   
-      </div>
+      </div> */}
     </section>
   );
 };
