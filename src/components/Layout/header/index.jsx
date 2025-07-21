@@ -754,11 +754,11 @@ const Header = () => {
     { name: "IT Services", href: "/it-services" },
     { name: "Digital Marketing", href: "/digital-marketing" },
    
-    { name: "Departments", href: "/departments" },
+    { name: "Departments", href: "/organization-departments" },
     { name: "Our Teams", href: "/our-teams" },
     { name: "Connect", href: "/contact" },
-    { name: "privacy", href: "/privacy-policy" },
-     { name: "Carrier ", href: "/careers" },
+    { name: "policies", href: "/privacy-policy" },
+    
   ];
 
   const socialLinks = [

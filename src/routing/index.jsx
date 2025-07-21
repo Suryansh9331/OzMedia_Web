@@ -9,6 +9,7 @@ import ContactUsPage from "../pages/ContactUs";
 import OurTeamsPage from "../pages/OurTeams";
 import PrivacyPolicy from "../pages/PrivacyPolicy/Privacy.jsx";
 import ScrollToTop from "../components/common/Scrolltotop.jsx";
+import Departments from "../pages/Departments/index.jsx";
 const AppRoutes = () => {
   return (
    <div>
@@ -23,6 +24,7 @@ const AppRoutes = () => {
         <Route path="/digital-marketing" element={<MarketingServicesPage />} />
         <Route path="/our-teams" element={<OurTeamsPage />} />
         <Route path="/privacy-policy" element={< PrivacyPolicy/>} />
+        <Route path="/organization-departments" element={< Departments/>} />
       </Route>
     </Routes>
     </div>

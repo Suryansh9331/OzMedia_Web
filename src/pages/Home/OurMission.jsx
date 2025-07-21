@@ -220,6 +220,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import plane from "../../assets/images/plane.png"; // ✅ Update if needed
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(MotionPathPlugin);
 
@@ -416,12 +417,14 @@ const OurMission = () => {
 
         {/* 🧭 Minimal Learn More Button */}
         <div className="flex justify-center lg:justify-start mt-2">
+        <Link to ="/contact" >
           <button
             id="cta-button"
             className="px-6 py-3 rounded-full border-2 border-[#AE5500] text-[#AE5500] font-semibold text-lg hover:bg-[#AE5500]/10 transition-all duration-300"
           >
             Learn More
           </button>
+        </Link>
         </div>
       </div>
 

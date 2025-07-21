@@ -355,20 +355,20 @@ const Footer = () => {
     { label: "Home", to: "/" },
     { label: "About Us", to: "/about" },
     { label: "IT services", to: "/it-services" },
-    { label: "Carrier Opportunities", to: "/careers" },
+   
     { label: "Digital Marketing Services", to: "/digital-marketing" },
     { label: "Ads Services", to: "/ads-services" },
-    { label: "Departments", to: "/departments" },
+    { label: "Departments", to: "/organization-departments" },
     { label: "Our Team", to: "/team" },
   ];
 
   const customerLinks = [
-    { label: "Client Support", to: "/support" },
-    { label: "FAQs", to: "/faqs" },
+    { label: "Client Support", to: "/contact" },
+    { label: "FAQs", to: "/about" },
     { label: "Contact Us", to: "/contact" },
-    { label: "24/7 Support", to: "/support-24-7" },
-    { label: "Feedback", to: "/feedback" },
-    { label: "Testimonials", to: "/testimonials" },
+    { label: "24/7 Support", to: "/contact" },
+    { label: "Feedback", to: "/contact" },
+    { label: "Testimonials", to: "about" },
   ];
 
   const additionalLinks = [
