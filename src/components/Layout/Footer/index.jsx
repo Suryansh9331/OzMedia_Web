@@ -356,7 +356,7 @@ const Footer = () => {
     { label: "Home", to: "/" },
     { label: "About Us", to: "/about" },
     { label: "IT services", to: "/it-services" },
-   
+
     { label: "Digital Marketing Services", to: "/digital-marketing" },
     { label: "Ads Services", to: "/ads-services" },
     { label: "Departments", to: "/organization-departments" },
@@ -373,9 +373,9 @@ const Footer = () => {
   ];
 
   const additionalLinks = [
-    { label: "OzMediaplanet", to: "/ozmediaplanet" },
-    { label: "Oz Learning", to: "/ozlearning" },
-    { label: "Oz International", to: "/ozinternational" },
+    { label: "OzMediaplanet", to: "https://ozmediaplanet.com/" },
+    { label: "Oz Learning", to: "https://ozlearning.org/" },
+    { label: "Oz International", to: "#" },
   ];
 
   return (
@@ -411,11 +411,10 @@ const Footer = () => {
                   src={logo2}
                   alt="Company Logo"
                   className="w-16 h-16 object-contain"
-                 
                 />
               </div>
               <h2 className="text-3xl font-extrabold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-               Oz Media Planet
+                Oz Media Planet
               </h2>
             </motion.div>
             <motion.p
@@ -511,13 +510,15 @@ const Footer = () => {
                   variants={linkHoverVariants}
                   whileHover="hover"
                 >
-                  <Link
-                    to={link.to}
+                  <a
+                    href={link.to}
+                    target="_blank" // optional: opens in a new tab
+                    rel="noopener noreferrer"
                     className="text-gray-300 hover:text-white text-sm flex items-center group transition-colors"
                   >
                     <ArrowRight className="w-3 h-3 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" />
                     {link.label}
-                  </Link>
+                  </a>
                 </motion.li>
               ))}
             </ul>
