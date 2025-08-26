@@ -1012,14 +1012,14 @@ const Header = () => {
             </div>
 
             <div className="md:hidden mt-4">
-           <Link to="/contact">
+           <a href="">
               <button
                 className="w-full bg-black text-white px-6 py-2.5 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-semibold text-sm tracking-wide"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Get in Touch
               </button>
-           </Link>
+           </a>
             </div>
           </div>
         </div>
