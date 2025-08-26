@@ -872,8 +872,7 @@ const Header = () => {
               </h1>
             </div>
             <div className="flex items-center space-x-4">
-              <a href="https://drive.google.com/uc?export=download&id=1WXSJppIlO-np4JGh_iKLg12u40ifz6Px
-">
+              <a href="">
                 <button className="hidden md:block bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-medium">
                   Get in Touch
                 </button>
