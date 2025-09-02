@@ -6,25 +6,25 @@ const TeamSection = () => {
       id: 1,
       name: "Walker",
       position: "CEO",
-      image: "/images/img_ditech_10.png" // Using placeholder image
+      image: "/images/img_ditech_10.png" 
     },
     {
       id: 2,
       name: "Unai Emery",
       position: "Director",
-      image: "/images/img_ditech_10.png" // Using placeholder image
+      image: "/images/img_ditech_10.png" 
     },
     {
       id: 3,
       name: "Natalia",
       position: "CBDO",
-      image: "/images/img_ditech_10.png" // Using placeholder image
+      image: "/images/img_ditech_10.png" 
     },
     {
       id: 4,
       name: "Ghea",
       position: "HR Manager",
-      image: "/images/img_ditech_10.png" // Using placeholder image
+      image: "/images/img_ditech_10.png" 
     }
   ];
 

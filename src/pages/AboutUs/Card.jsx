@@ -8,7 +8,6 @@ const TestimonialCard = ({ image, name, company, review }) => {
         <img src={image} alt={name} className="w-full h-full object-cover" />
       </div>
 
-      {/* Right: Content */}
       <div className="p-4 sm:w-2/3 flex flex-col justify-between">
         <div className="flex mb-2">
           {Array(5)

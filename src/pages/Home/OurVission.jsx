@@ -77,7 +77,6 @@
 // };
 
 // export default OurVision;
-
 import React from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -167,7 +166,6 @@ const OurVision = () => {
           technology and marketing.
         </p>
 
-        {/* Styled Button */}
         <div className="mt-4">
         <Link to="/contact"> 
           <button className="px-6 py-2 text-sm sm:text-base bg-gradient-to-r from-[#2C0659] to-[#A6409B] text-white rounded-full transition duration-300 ease-in-out hover:opacity-90">
