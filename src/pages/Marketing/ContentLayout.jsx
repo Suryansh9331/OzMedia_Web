@@ -16,7 +16,6 @@ const FeatureSection = ({ title, description, imgSrc, reverse = false }) => {
         <p className="text-black text-xl leading-relaxed">{description}</p>
       </div>
 
-      {/* Image */}
       <div className="w-full md:w-1/2 px-6 md:px-12 mb-8 md:mb-0">
         <img
           src={imgSrc}

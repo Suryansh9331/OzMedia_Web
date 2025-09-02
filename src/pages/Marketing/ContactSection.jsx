@@ -24,7 +24,6 @@ const ContactSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-    // Reset form or show success message
     alert('Thank you for your message! We will get back to you soon.');
   };
 

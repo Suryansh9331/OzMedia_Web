@@ -259,7 +259,6 @@ const layoutType1 = (items, buttonText) => (
   </div>
 );
 
-// Layout Type 2: Card List (like Service 6)
 const layoutType2 = (items, buttonText) => (
   <div className="space-y-8">
     {items.map((item, index) => (
