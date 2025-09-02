@@ -3,7 +3,6 @@ import React from "react";
 const TestimonialCard = ({ image, name, company, review }) => {
   return (
     <div className="flex flex-col sm:flex-row bg-[#ffe9e3] rounded-xl overflow-hidden shadow-md max-w-2xl w-full">
-      {/* Left: Image */}
       <div className="sm:w-1/3">
         <img src={image} alt={name} className="w-full h-full object-cover" />
       </div>

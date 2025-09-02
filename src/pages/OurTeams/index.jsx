@@ -80,7 +80,6 @@ const OurTeamsPage = () => {
         </div>
       </section>
 
-      {/* FAQ Section with Background Image */}
       <section className="relative z-10 p-4 ">
         <img
           src="/images/img_abstractgeometricseamlesspatterns2zqt82d_1.png"
