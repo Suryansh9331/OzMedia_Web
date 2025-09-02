@@ -6,7 +6,7 @@ import React, { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
-import plane from "../../assets/images/plane.png"; // ✅ Update if needed
+import plane from "../../assets/images/plane.png"; 
 import { Link } from "react-router-dom";
 
 gsap.registerPlugin(MotionPathPlugin);
