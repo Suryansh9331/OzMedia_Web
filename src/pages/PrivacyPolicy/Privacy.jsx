@@ -154,9 +154,7 @@ const PrivacyPolicy = () => {
         </div>
       </div>
 
-      {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 pb-12">
-        {/* Introduction */}
         <div
           className={`bg-white rounded-xl p-8 mb-12 shadow-lg transition-all duration-1000 delay-200 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
