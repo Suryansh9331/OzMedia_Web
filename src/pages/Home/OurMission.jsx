@@ -303,26 +303,7 @@ const OurMission = () => {
         stagger: 0.1,
       }, "-=0.8");
 
-    // CTA button bounce
-    // gsap.to("#cta-button", {
-    //   y: -8,
-    //   duration: 2.5,
-    //   ease: "sine.inOut",
-    //   repeat: -1,
-    //   yoyo: true,
-    //   delay: 1,
-    // });
 
-    // Title shimmer effect
-    // gsap.to("#main-title", {
-    //   backgroundPosition: "200% 0%",
-    //   duration: 3,
-    //   ease: "none",
-    //   repeat: -1,
-    //   delay: 2,
-    // });
-
-    // Background decoration spin
     gsap.to("#bg-decoration", {
       rotation: 360,
       duration: 20,
